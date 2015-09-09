@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2221F681B9F7D570009D48A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F671B9F7D570009D48A /* Foundation.framework */; };
+		B2221F6A1B9F7D570009D48A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F691B9F7D570009D48A /* CoreGraphics.framework */; };
+		B2221F6C1B9F7D570009D48A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F6B1B9F7D570009D48A /* UIKit.framework */; };
+		B2221F721B9F7D570009D48A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2221F701B9F7D570009D48A /* InfoPlist.strings */; };
+		B2221F741B9F7D570009D48A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221F731B9F7D570009D48A /* main.m */; };
+		B2221F781B9F7D570009D48A /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221F771B9F7D570009D48A /* IGAppDelegate.m */; };
+		B2221F7B1B9F7D570009D48A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2221F791B9F7D570009D48A /* Main.storyboard */; };
+		B2221F801B9F7D570009D48A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2221F7F1B9F7D570009D48A /* Images.xcassets */; };
+		B2221F871B9F7D570009D48A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F861B9F7D570009D48A /* XCTest.framework */; };
+		B2221F881B9F7D570009D48A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F671B9F7D570009D48A /* Foundation.framework */; };
+		B2221F891B9F7D570009D48A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221F6B1B9F7D570009D48A /* UIKit.framework */; };
+		B2221F911B9F7D570009D48A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2221F8F1B9F7D570009D48A /* InfoPlist.strings */; };
+		B2221F931B9F7D570009D48A /* HEROESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221F921B9F7D570009D48A /* HEROESTests.m */; };
+		B2221FC41BA04AF50009D48A /* IGAddHeroesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221F9E1BA04AF40009D48A /* IGAddHeroesViewController.m */; };
+		B2221FC51BA04AF50009D48A /* IGCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FA01BA04AF40009D48A /* IGCollectionViewController.m */; };
+		B2221FC61BA04AF50009D48A /* IGContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FA21BA04AF40009D48A /* IGContainerViewController.m */; };
+		B2221FC71BA04AF50009D48A /* IGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FA41BA04AF40009D48A /* IGTableViewController.m */; };
+		B2221FC81BA04AF50009D48A /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FA61BA04AF40009D48A /* IGViewController.m */; };
+		B2221FC91BA04AF50009D48A /* IGEmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FA91BA04AF40009D48A /* IGEmptySegue.m */; };
+		B2221FCA1BA04AF50009D48A /* IGHero.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FAB1BA04AF40009D48A /* IGHero.m */; };
+		B2221FCB1BA04AF50009D48A /* IGHeroDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FAD1BA04AF40009D48A /* IGHeroDataSource.m */; };
+		B2221FCC1BA04AF50009D48A /* IGSuperHeroFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FAF1BA04AF40009D48A /* IGSuperHeroFactory.m */; };
+		B2221FCD1BA04AF50009D48A /* IGValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FB11BA04AF40009D48A /* IGValidator.m */; };
+		B2221FCE1BA04AF50009D48A /* heroDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB31BA04AF40009D48A /* heroDataSource.plist */; };
+		B2221FCF1BA04AF50009D48A /* batman1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB51BA04AF50009D48A /* batman1.png */; };
+		B2221FD01BA04AF50009D48A /* harry potter1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB61BA04AF50009D48A /* harry potter1.png */; };
+		B2221FD11BA04AF50009D48A /* hellboy1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB71BA04AF50009D48A /* hellboy1.png */; };
+		B2221FD21BA04AF50009D48A /* hulk1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB81BA04AF50009D48A /* hulk1.png */; };
+		B2221FD31BA04AF50009D48A /* robocop1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FB91BA04AF50009D48A /* robocop1.png */; };
+		B2221FD41BA04AF50009D48A /* santa1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FBA1BA04AF50009D48A /* santa1.png */; };
+		B2221FD51BA04AF50009D48A /* spider-man1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FBB1BA04AF50009D48A /* spider-man1.png */; };
+		B2221FD61BA04AF50009D48A /* superman1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FBC1BA04AF50009D48A /* superman1.png */; };
+		B2221FD71BA04AF50009D48A /* Terminator1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FBD1BA04AF50009D48A /* Terminator1.png */; };
+		B2221FD81BA04AF50009D48A /* Yalantis2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2221FBE1BA04AF50009D48A /* Yalantis2.png */; };
+		B2221FD91BA04AF50009D48A /* IGCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FC11BA04AF50009D48A /* IGCollectionCell.m */; };
+		B2221FDA1BA04AF50009D48A /* IGTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2221FC31BA04AF50009D48A /* IGTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2221F8A1B9F7D570009D48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2221F5C1B9F7D570009D48A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2221F631B9F7D570009D48A;
+			remoteInfo = HEROES;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2221F641B9F7D570009D48A /* HEROES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HEROES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2221F671B9F7D570009D48A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B2221F691B9F7D570009D48A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2221F6B1B9F7D570009D48A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B2221F6F1B9F7D570009D48A /* HEROES-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HEROES-Info.plist"; sourceTree = "<group>"; };
+		B2221F711B9F7D570009D48A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2221F731B9F7D570009D48A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2221F751B9F7D570009D48A /* HEROES-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HEROES-Prefix.pch"; sourceTree = "<group>"; };
+		B2221F761B9F7D570009D48A /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		B2221F771B9F7D570009D48A /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
+		B2221F7A1B9F7D570009D48A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2221F7F1B9F7D570009D48A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2221F851B9F7D570009D48A /* HEROESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HEROESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2221F861B9F7D570009D48A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B2221F8E1B9F7D570009D48A /* HEROESTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HEROESTests-Info.plist"; sourceTree = "<group>"; };
+		B2221F901B9F7D570009D48A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2221F921B9F7D570009D48A /* HEROESTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HEROESTests.m; sourceTree = "<group>"; };
+		B2221F9D1BA04AF40009D48A /* IGAddHeroesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGAddHeroesViewController.h; sourceTree = "<group>"; };
+		B2221F9E1BA04AF40009D48A /* IGAddHeroesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGAddHeroesViewController.m; sourceTree = "<group>"; };
+		B2221F9F1BA04AF40009D48A /* IGCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGCollectionViewController.h; sourceTree = "<group>"; };
+		B2221FA01BA04AF40009D48A /* IGCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGCollectionViewController.m; sourceTree = "<group>"; };
+		B2221FA11BA04AF40009D48A /* IGContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGContainerViewController.h; sourceTree = "<group>"; };
+		B2221FA21BA04AF40009D48A /* IGContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGContainerViewController.m; sourceTree = "<group>"; };
+		B2221FA31BA04AF40009D48A /* IGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGTableViewController.h; sourceTree = "<group>"; };
+		B2221FA41BA04AF40009D48A /* IGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGTableViewController.m; sourceTree = "<group>"; };
+		B2221FA51BA04AF40009D48A /* IGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGViewController.h; sourceTree = "<group>"; };
+		B2221FA61BA04AF40009D48A /* IGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGViewController.m; sourceTree = "<group>"; };
+		B2221FA81BA04AF40009D48A /* IGEmptySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEmptySegue.h; sourceTree = "<group>"; };
+		B2221FA91BA04AF40009D48A /* IGEmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEmptySegue.m; sourceTree = "<group>"; };
+		B2221FAA1BA04AF40009D48A /* IGHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGHero.h; sourceTree = "<group>"; };
+		B2221FAB1BA04AF40009D48A /* IGHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGHero.m; sourceTree = "<group>"; };
+		B2221FAC1BA04AF40009D48A /* IGHeroDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGHeroDataSource.h; sourceTree = "<group>"; };
+		B2221FAD1BA04AF40009D48A /* IGHeroDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGHeroDataSource.m; sourceTree = "<group>"; };
+		B2221FAE1BA04AF40009D48A /* IGSuperHeroFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGSuperHeroFactory.h; sourceTree = "<group>"; };
+		B2221FAF1BA04AF40009D48A /* IGSuperHeroFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGSuperHeroFactory.m; sourceTree = "<group>"; };
+		B2221FB01BA04AF40009D48A /* IGValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGValidator.h; sourceTree = "<group>"; };
+		B2221FB11BA04AF40009D48A /* IGValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGValidator.m; sourceTree = "<group>"; };
+		B2221FB31BA04AF40009D48A /* heroDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heroDataSource.plist; sourceTree = "<group>"; };
+		B2221FB51BA04AF50009D48A /* batman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman1.png; sourceTree = "<group>"; };
+		B2221FB61BA04AF50009D48A /* harry potter1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harry potter1.png"; sourceTree = "<group>"; };
+		B2221FB71BA04AF50009D48A /* hellboy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hellboy1.png; sourceTree = "<group>"; };
+		B2221FB81BA04AF50009D48A /* hulk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hulk1.png; sourceTree = "<group>"; };
+		B2221FB91BA04AF50009D48A /* robocop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robocop1.png; sourceTree = "<group>"; };
+		B2221FBA1BA04AF50009D48A /* santa1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = santa1.png; sourceTree = "<group>"; };
+		B2221FBB1BA04AF50009D48A /* spider-man1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spider-man1.png"; sourceTree = "<group>"; };
+		B2221FBC1BA04AF50009D48A /* superman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman1.png; sourceTree = "<group>"; };
+		B2221FBD1BA04AF50009D48A /* Terminator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Terminator1.png; sourceTree = "<group>"; };
+		B2221FBE1BA04AF50009D48A /* Yalantis2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yalantis2.png; sourceTree = "<group>"; };
+		B2221FC01BA04AF50009D48A /* IGCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGCollectionCell.h; sourceTree = "<group>"; };
+		B2221FC11BA04AF50009D48A /* IGCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGCollectionCell.m; sourceTree = "<group>"; };
+		B2221FC21BA04AF50009D48A /* IGTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGTableCell.h; sourceTree = "<group>"; };
+		B2221FC31BA04AF50009D48A /* IGTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2221F611B9F7D570009D48A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221F6A1B9F7D570009D48A /* CoreGraphics.framework in Frameworks */,
+				B2221F6C1B9F7D570009D48A /* UIKit.framework in Frameworks */,
+				B2221F681B9F7D570009D48A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2221F821B9F7D570009D48A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221F871B9F7D570009D48A /* XCTest.framework in Frameworks */,
+				B2221F891B9F7D570009D48A /* UIKit.framework in Frameworks */,
+				B2221F881B9F7D570009D48A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2221F5B1B9F7D570009D48A = {
+			isa = PBXGroup;
+			children = (
+				B2221F6D1B9F7D570009D48A /* HEROES */,
+				B2221F8C1B9F7D570009D48A /* HEROESTests */,
+				B2221F661B9F7D570009D48A /* Frameworks */,
+				B2221F651B9F7D570009D48A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2221F651B9F7D570009D48A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F641B9F7D570009D48A /* HEROES.app */,
+				B2221F851B9F7D570009D48A /* HEROESTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2221F661B9F7D570009D48A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F671B9F7D570009D48A /* Foundation.framework */,
+				B2221F691B9F7D570009D48A /* CoreGraphics.framework */,
+				B2221F6B1B9F7D570009D48A /* UIKit.framework */,
+				B2221F861B9F7D570009D48A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2221F6D1B9F7D570009D48A /* HEROES */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F761B9F7D570009D48A /* IGAppDelegate.h */,
+				B2221F771B9F7D570009D48A /* IGAppDelegate.m */,
+				B2221FA71BA04AF40009D48A /* Models */,
+				B2221FBF1BA04AF50009D48A /* Views */,
+				B2221F9C1BA04AF40009D48A /* Controllers */,
+				B2221FB21BA04AF40009D48A /* Resources */,
+				B2221F791B9F7D570009D48A /* Main.storyboard */,
+				B2221F7F1B9F7D570009D48A /* Images.xcassets */,
+				B2221F6E1B9F7D570009D48A /* Supporting Files */,
+			);
+			path = HEROES;
+			sourceTree = "<group>";
+		};
+		B2221F6E1B9F7D570009D48A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F6F1B9F7D570009D48A /* HEROES-Info.plist */,
+				B2221F701B9F7D570009D48A /* InfoPlist.strings */,
+				B2221F731B9F7D570009D48A /* main.m */,
+				B2221F751B9F7D570009D48A /* HEROES-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2221F8C1B9F7D570009D48A /* HEROESTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F921B9F7D570009D48A /* HEROESTests.m */,
+				B2221F8D1B9F7D570009D48A /* Supporting Files */,
+			);
+			path = HEROESTests;
+			sourceTree = "<group>";
+		};
+		B2221F8D1B9F7D570009D48A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F8E1B9F7D570009D48A /* HEROESTests-Info.plist */,
+				B2221F8F1B9F7D570009D48A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2221F9C1BA04AF40009D48A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2221F9D1BA04AF40009D48A /* IGAddHeroesViewController.h */,
+				B2221F9E1BA04AF40009D48A /* IGAddHeroesViewController.m */,
+				B2221F9F1BA04AF40009D48A /* IGCollectionViewController.h */,
+				B2221FA01BA04AF40009D48A /* IGCollectionViewController.m */,
+				B2221FA11BA04AF40009D48A /* IGContainerViewController.h */,
+				B2221FA21BA04AF40009D48A /* IGContainerViewController.m */,
+				B2221FA31BA04AF40009D48A /* IGTableViewController.h */,
+				B2221FA41BA04AF40009D48A /* IGTableViewController.m */,
+				B2221FA51BA04AF40009D48A /* IGViewController.h */,
+				B2221FA61BA04AF40009D48A /* IGViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2221FA71BA04AF40009D48A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2221FA81BA04AF40009D48A /* IGEmptySegue.h */,
+				B2221FA91BA04AF40009D48A /* IGEmptySegue.m */,
+				B2221FAA1BA04AF40009D48A /* IGHero.h */,
+				B2221FAB1BA04AF40009D48A /* IGHero.m */,
+				B2221FAC1BA04AF40009D48A /* IGHeroDataSource.h */,
+				B2221FAD1BA04AF40009D48A /* IGHeroDataSource.m */,
+				B2221FAE1BA04AF40009D48A /* IGSuperHeroFactory.h */,
+				B2221FAF1BA04AF40009D48A /* IGSuperHeroFactory.m */,
+				B2221FB01BA04AF40009D48A /* IGValidator.h */,
+				B2221FB11BA04AF40009D48A /* IGValidator.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2221FB21BA04AF40009D48A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2221FB31BA04AF40009D48A /* heroDataSource.plist */,
+				B2221FB41BA04AF50009D48A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2221FB41BA04AF50009D48A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B2221FB51BA04AF50009D48A /* batman1.png */,
+				B2221FB61BA04AF50009D48A /* harry potter1.png */,
+				B2221FB71BA04AF50009D48A /* hellboy1.png */,
+				B2221FB81BA04AF50009D48A /* hulk1.png */,
+				B2221FB91BA04AF50009D48A /* robocop1.png */,
+				B2221FBA1BA04AF50009D48A /* santa1.png */,
+				B2221FBB1BA04AF50009D48A /* spider-man1.png */,
+				B2221FBC1BA04AF50009D48A /* superman1.png */,
+				B2221FBD1BA04AF50009D48A /* Terminator1.png */,
+				B2221FBE1BA04AF50009D48A /* Yalantis2.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B2221FBF1BA04AF50009D48A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2221FC01BA04AF50009D48A /* IGCollectionCell.h */,
+				B2221FC11BA04AF50009D48A /* IGCollectionCell.m */,
+				B2221FC21BA04AF50009D48A /* IGTableCell.h */,
+				B2221FC31BA04AF50009D48A /* IGTableCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2221F631B9F7D570009D48A /* HEROES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2221F961B9F7D570009D48A /* Build configuration list for PBXNativeTarget "HEROES" */;
+			buildPhases = (
+				B2221F601B9F7D570009D48A /* Sources */,
+				B2221F611B9F7D570009D48A /* Frameworks */,
+				B2221F621B9F7D570009D48A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HEROES;
+			productName = HEROES;
+			productReference = B2221F641B9F7D570009D48A /* HEROES.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2221F841B9F7D570009D48A /* HEROESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2221F991B9F7D570009D48A /* Build configuration list for PBXNativeTarget "HEROESTests" */;
+			buildPhases = (
+				B2221F811B9F7D570009D48A /* Sources */,
+				B2221F821B9F7D570009D48A /* Frameworks */,
+				B2221F831B9F7D570009D48A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2221F8B1B9F7D570009D48A /* PBXTargetDependency */,
+			);
+			name = HEROESTests;
+			productName = HEROESTests;
+			productReference = B2221F851B9F7D570009D48A /* HEROESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2221F5C1B9F7D570009D48A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Igor Guk";
+				TargetAttributes = {
+					B2221F841B9F7D570009D48A = {
+						TestTargetID = B2221F631B9F7D570009D48A;
+					};
+				};
+			};
+			buildConfigurationList = B2221F5F1B9F7D570009D48A /* Build configuration list for PBXProject "HEROES" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2221F5B1B9F7D570009D48A;
+			productRefGroup = B2221F651B9F7D570009D48A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2221F631B9F7D570009D48A /* HEROES */,
+				B2221F841B9F7D570009D48A /* HEROESTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2221F621B9F7D570009D48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221F801B9F7D570009D48A /* Images.xcassets in Resources */,
+				B2221FD21BA04AF50009D48A /* hulk1.png in Resources */,
+				B2221F721B9F7D570009D48A /* InfoPlist.strings in Resources */,
+				B2221FD11BA04AF50009D48A /* hellboy1.png in Resources */,
+				B2221FD61BA04AF50009D48A /* superman1.png in Resources */,
+				B2221FD81BA04AF50009D48A /* Yalantis2.png in Resources */,
+				B2221FD71BA04AF50009D48A /* Terminator1.png in Resources */,
+				B2221F7B1B9F7D570009D48A /* Main.storyboard in Resources */,
+				B2221FD01BA04AF50009D48A /* harry potter1.png in Resources */,
+				B2221FD31BA04AF50009D48A /* robocop1.png in Resources */,
+				B2221FCE1BA04AF50009D48A /* heroDataSource.plist in Resources */,
+				B2221FD51BA04AF50009D48A /* spider-man1.png in Resources */,
+				B2221FCF1BA04AF50009D48A /* batman1.png in Resources */,
+				B2221FD41BA04AF50009D48A /* santa1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2221F831B9F7D570009D48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221F911B9F7D570009D48A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2221F601B9F7D570009D48A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221FDA1BA04AF50009D48A /* IGTableCell.m in Sources */,
+				B2221F781B9F7D570009D48A /* IGAppDelegate.m in Sources */,
+				B2221FC91BA04AF50009D48A /* IGEmptySegue.m in Sources */,
+				B2221FCD1BA04AF50009D48A /* IGValidator.m in Sources */,
+				B2221FC81BA04AF50009D48A /* IGViewController.m in Sources */,
+				B2221F741B9F7D570009D48A /* main.m in Sources */,
+				B2221FC51BA04AF50009D48A /* IGCollectionViewController.m in Sources */,
+				B2221FCC1BA04AF50009D48A /* IGSuperHeroFactory.m in Sources */,
+				B2221FC71BA04AF50009D48A /* IGTableViewController.m in Sources */,
+				B2221FC61BA04AF50009D48A /* IGContainerViewController.m in Sources */,
+				B2221FC41BA04AF50009D48A /* IGAddHeroesViewController.m in Sources */,
+				B2221FCB1BA04AF50009D48A /* IGHeroDataSource.m in Sources */,
+				B2221FD91BA04AF50009D48A /* IGCollectionCell.m in Sources */,
+				B2221FCA1BA04AF50009D48A /* IGHero.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2221F811B9F7D570009D48A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2221F931B9F7D570009D48A /* HEROESTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2221F8B1B9F7D570009D48A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2221F631B9F7D570009D48A /* HEROES */;
+			targetProxy = B2221F8A1B9F7D570009D48A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2221F701B9F7D570009D48A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2221F711B9F7D570009D48A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2221F791B9F7D570009D48A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2221F7A1B9F7D570009D48A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2221F8F1B9F7D570009D48A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2221F901B9F7D570009D48A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2221F941B9F7D570009D48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2221F951B9F7D570009D48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2221F971B9F7D570009D48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HEROES/HEROES-Prefix.pch";
+				INFOPLIST_FILE = "HEROES/HEROES-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B2221F981B9F7D570009D48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HEROES/HEROES-Prefix.pch";
+				INFOPLIST_FILE = "HEROES/HEROES-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B2221F9A1B9F7D570009D48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HEROES.app/HEROES";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HEROES/HEROES-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HEROESTests/HEROESTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B2221F9B1B9F7D570009D48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HEROES.app/HEROES";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HEROES/HEROES-Prefix.pch";
+				INFOPLIST_FILE = "HEROESTests/HEROESTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2221F5F1B9F7D570009D48A /* Build configuration list for PBXProject "HEROES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2221F941B9F7D570009D48A /* Debug */,
+				B2221F951B9F7D570009D48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2221F961B9F7D570009D48A /* Build configuration list for PBXNativeTarget "HEROES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2221F971B9F7D570009D48A /* Debug */,
+				B2221F981B9F7D570009D48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2221F991B9F7D570009D48A /* Build configuration list for PBXNativeTarget "HEROESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2221F9A1B9F7D570009D48A /* Debug */,
+				B2221F9B1B9F7D570009D48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2221F5C1B9F7D570009D48A /* Project object */;
+}
